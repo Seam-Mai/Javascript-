@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework2</title>
+    <style>
+      .container {
+        margin: 0 auto;
+        max-width: 800px; /* Increased max-width for better alignment */
+        padding-top: 17%;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap; /* Items will wrap to the next line when necessary */
+        gap: 40px; /* Aligns items with space between them */
+      }
+
+      .item {
+        margin: 10px;
+        text-align: center;
+        flex: 1 0 200px; /* Each item will take up equal space with a minimum width of 200px */
+      }
+
+      .box {
+        border: 1px solid #ccc;
+        padding: 10px; /* Adjust the padding to add space */
+        position: relative;
+        border-radius: 10px;
+        width: 100%; /* Make sure the box takes up full width */
+      }
+
+      .box img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .text-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="imgList">
+      <div class="row"></div>
+    </div>
+
+    <script>
+      const imgList = [
+        { name: "មើលអី", img: "1.jpg" },
+        { name: "មិនដែរឃើញ", img: "2.jpg" },
+        { name: "គេ Cute មែន", img: "3.jpg" },
+      ];
+
+      getImg();
+
+      function getImg() {
+        var txt = "";
+        for (var i = 0; i < imgList.length; i++) {
+          txt += `
+        <div class="item">
+          <div class="box">
+            <img src="${imgList[i].img}" alt="" />
+            <div class="text-overlay">${imgList[i].name}</div>
+          </div>
+        </div>
+      `;
+        }
+        document.querySelector(".row").innerHTML = txt;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addEverlistener</title>
+  </head>
+  <body>
+    <div>
+      <label for="">Qty:</label>
+      <input type="text" name="" id="txt-qty" />
+      <label for="">price</label>
+      <input type="text" name="" id="txt-price" />
+      <label for="">total</label>
+      <input type="text" name="" id="txt-total" />
+      <button id="btn">Result</button>
+    </div>
+    <script>
+      var qty = document.createElement("txt-qty");
+      var price = document.createElement("txt-price");
+      var total = document.createElement("txt-total");
+      total.value = qty.value * price.value;
+
+      total.addEventListener("keyup", function () {});
+      qty.addEventListener("keyup", function () {
+        getFuntion();
+      });
+
+      price.addEventListener("keyup", function () {
+        getFuntion();
+      });
+
+      function getFuntion() {
+        total.value = qty.value * price.value;
+      }
+    </script>
+  </body>
+</html>

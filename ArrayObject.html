@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArrayObject</title>
+    <style>
+      #demo {
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 100%;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo">1</div>
+  </body>
+  <script>
+    var menu = [
+      { name: "HOME", Color: "Red", "font-size": "20px" },
+      { name: "ABOUT", Color: "PINK", "font-size": "20px" },
+      { name: "CONTACT", Color: "BLUE", "font-size": "20px" },
+      { name: "MENU", Color: "GREEN", "font-size": "20px" },
+      { name: "LOGIN", Color: "YELLOW", "font-size": "20px" },
+    ];
+
+    var txt = "";
+    var num = menu.length;
+    for (i = 0; (i = num); i++) {
+      txt += `<li>
+            <a href="">
+                ${menu[i]["name"]}
+                </a>
+       </li> `;
+    }
+
+    for (i = 0; i < 4; i++) {
+      txt += menu.length;
+    }
+    document.getElementById("demo").innerHTML = `<ul>${txt}</ul>`;
+  </script>
+</html>

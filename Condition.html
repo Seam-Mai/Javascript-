@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>conditionStament</title>
+    <style>
+      #demo {
+        font-size: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo">hello</div>
+    <button id="btn1">Set Txt</button>
+    <script>
+      document.getElementById("btn1").addEventListener("click", function () {
+        var x = 50;
+        if (x == 50) {
+          document.getElementById("demo").innerHTML = x;
+        }
+      });
+    </script>
+  </body>
+</html>

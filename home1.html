@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework1</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <label for="">total score</label>
+    <input type="text" name="" id="txt-total" />
+    <label for="">Result</label>
+    <input type="text" name="" id="txt-result" readonly />
+  </body>
+  <script>
+    var total = document.getElementById("txt-total");
+    var Result = document.getElementById("txt-result");
+
+    toatl.addEventListener("keyup", function () {
+      if (total.value >= 90) {
+        Result.value = "A+";
+      }
+    });
+  </script>
+</html>

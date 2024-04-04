@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="container-full">
+      <div class="container" id="menu"></div>
+    </div>
+    <div class="img-box">
+        <div class="item">
+           <img src="3.jpg" alt="">
+           <h1>mii Cat</h1>
+        </div>
+        <div class="item">
+            <img src="2.jpg" alt="">
+            <h1>All Cat</h1>
+        </div>
+
+    </div>
+  </body>
+  <script>
+    var Menu = [
+      { name: "Home",  color: "pink" },
+      { name: "Menu", color: "blue" },
+      { name: "Contact Us",  color: "green" },
+      { name: "Login",  color: "yello" },
+    ];
+    // console.log(Menu);
+    // var num = Menu.length;
+    // var txt = "";
+
+    // for (i = 0; i < num; i++) {
+    //   txt += `<li>
+    //             <a href="" style='color:${Menu[i]['color']}'>
+    //                 ${Menu[i]['name']}
+    //                 </a>
+    //                 </li> `;
+    // }
+    // document.getElementById("menu").innerHTML = `<ul>${txt}</ul>`;
+    var txt = "";
+    for(i in Menu){
+        txt += `<li>
+                <a href="" style='color:${Menu[i]['color']}'>
+                    ${Menu[i]['name']}
+                    </a>
+                    </li> `;
+    }
+    document.getElementById("menu").innerHTML = `<ul>${txt}</ul>`;
+    
+  </script>
+</html>

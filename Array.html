@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+    <style>
+      #demo {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+
+    <input type="button" value="Click Me!" id="tbn1" />
+  </body>
+  <script>
+    var color = "red";
+    var myColor = ["pink", "black", "blue", "green"];
+    var ColorList = new Array("pink", "black", "blue", "green", "brown");
+
+    document.getElementById("tbn1").addEventListener("click", function () {
+      document.getElementById("demo").innerHTML = myColor[1];
+    });
+  </script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add-and-Delete</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-full">
+      <div class="container" id="menu"></div>
+    </div>
+  </body>
+  <script>
+    // var menubox = [
+    //   { name: "Home", color: "pink" },
+    //   { name: "Menu", color: "blue" },
+    //   { name: "Contact Us", color: "green" },
+    //   { name: "Login", color: "yello" },
+    // ];
+    var Menu = ["Home", "Menu", "Apple", "Google"];
+    var color = ["pink", "black", "green", "blue"];
+    var num = Menu.length;
+    var txt = "";
+
+    for (i = 0; i < num; i++) {
+      txt += `<li>
+                <a href="" style='color:${color[i]}'>
+                    ${Menu[i]}
+                    </a>
+                    </li> `;
+    }
+    console.log(txt);
+    document.getElementById("menu").innerHTML = `<ul>${txt}</ul>`;
+  </script>
+</html>

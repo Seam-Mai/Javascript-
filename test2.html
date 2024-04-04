@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Strings</h2>
+
+    <p>Strings can be written with double or single quotes.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      class Person {
+        constructor(gender) {
+          this.gender = gender;
+          this.girlFriend = null;
+          this.happy = false;
+        }
+
+        crushOn(person) {
+          // Assume crushOn returns true if the person is crush-worthy
+          return true;
+        }
+
+        askGirlOut(person) {
+          // Assume askGirlOut returns "ok" if successful
+          return "ok";
+        }
+
+        cry() {
+          console.log("Crying...");
+        }
+      }
+
+      let me = new Person("boy");
+      let you = new Person("girl");
+
+      if (me.girlFriend == null && me.crushOn(you)) {
+        try {
+          if (me.askGirlOut(you) === "ok") {
+            me.happy = true;
+          } else {
+            me.cry();
+          }
+        } catch (IAlreadyHaveABoyFriendException) {
+          me.cry();
+        }
+      }
+    </script>
+  </body>
+</html>
