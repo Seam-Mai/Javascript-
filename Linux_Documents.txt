@@ -1,0 +1,37 @@
+		<===================Linux=====================>
+
+TYPE OF SERVICES IN COMPUTING ( Fedora Server )
+
+web sever 
+database server 
+email server
+web proxy sever
+DNS server
+FTP server
+file server
+DHCP server
+Cloud server
+Application server
+Print server
+NTP server
+Radius server
+Syslog server
+Physical server
+
+		        <=============================>
+
+1.what is Linux commands
+
+Linux commands are instructions ,or program you type into the terminal to interact with and control the Linux operating system, enabling tasks
+like file management , process control, and system administrator.
+
+				   <========>
++ content of Linux commands
+-> file directory managements
+-> System information 
+-> Process Managements
+-> Networking
+-> Text Processing 
+
+
+
